@@ -1,0 +1,27 @@
+nome: cars
+
+
+Column            Type                    Attributes              Index
+
+id                BIGINT UNSIGNED         AUTO-INCREMENT NOT-NULL PRIMARY KEY       
+brand             VARCHAR(200)            NOT-NULL                INDEX 
+model             VARCHAR(255)            NULL
+type              VARCHAR(200)            NOT-NULL
+year              YEAR                    NOT-NULL
+km-travel         MEDIUMINT UNSIGNED      NOT-NULL
+engine            VARCHAR(200)            NOT-NULL                INDEX
+power/kw          SMALLINT UNSIGNED       NOT-NULL
+power/hp          SMALLINT UNSIGNED       NOT-NULL
+transmission      VARCHAR(200)            NULL
+drivetrain        VARCHAR(200)            NULL
+color             VARCHAR(200)            NULL
+seats             TINYINT UNSIGNED        NULL
+doors             TINYINT UNSIGNED        NULL
+product-number    VARCHAR(255)            NULL, UNIQUE
+price             MEDIUMINT UNSIGNED      NOT NULL
+
+warranty          VARCHAR(255)            NULL
+previous-owners   TINYINT UNSIGNED        NULL
+description/note  TEXT                    NULL
+discount          SMALLINT UNSIGNED       NULL
+
